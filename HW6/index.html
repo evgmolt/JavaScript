@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/script1.js"></script>
+</head>
+<body>
+  <div class="text2cols" id = "col1">
+    <div class="text2cols-item">
+      <ul id = "productList"></ul>
+    </div>
+      <div class="text2cols-item" id = "col2">
+        Корзина
+        <ul id = "basket"></ul>
+        Общая сумма: <p id = "totalSum"></p>
+      </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-overlay"></div>
+
+  <div class="modal" id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" role="dialog">
+    <button class="close-button" id="close-button" title="Закрыть модальное окно">Закрыть</button>
+    <div class="my_modal-content">
+      <div class="my_modal-header">
+      </div>
+      <div class = "galery">
+        <img src="img/IMG1.jpg"> 
+      </div>
+      <div class="thumbnails">  
+          <img id = "IMG1" src="img/IMG1_thumb.jpg">
+          <img id = "IMG2" src="img/IMG2_thumb.jpg">
+          <img id = "IMG3" src="img/IMG3_thumb.jpg"> 
+      </div>
+    </div>
+  </div>
+ 
+<script>
+		var modal = document.querySelector("#modal"),
+		    modalOverlay = document.querySelector("#modal-overlay"),
+		    closeButton = document.querySelector("#close-button"),
+		    openButton = document.querySelector("#open-button");
+ 
+    modal.classList.toggle("closed");
+	  modalOverlay.classList.toggle("closed");
+
+	closeButton.addEventListener("click", function() {
+	  modal.classList.toggle("closed");
+	  modalOverlay.classList.toggle("closed");
+	});
+
+	</script>
+  
+</body>
+</html>
