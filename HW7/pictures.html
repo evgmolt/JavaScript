@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .my_modal{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.5);z-index:1050;display:none;margin:0;padding:0;}.my_modal:target{display:block;overflow-y:auto;}.my_modal-dialog{position:relative;width:620;margin:10px;}@media (min-width:400px){.my_modal-dialog{max-width:1400px;margin:30px auto;}}.my_modal-content{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:6px;outline:0;}@media (min-width:1000px){.my_modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5);}}.my_modal-header{display:block;padding:14px 14px 4px;}.my_modal-title{margin-top:0;margin-bottom:0;line-height:1.5;font-size:1.25rem;font-weight:500;border-bottom:1px solid #d4d4d4;}.close{padding:1px 5px 0;border:1px solid #000;border-radius:50%;font-family:sans-serif;font-size:24px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;opacity:.5;text-decoration:none;top:4px;right:4px;position:absolute;}.close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer;opacity:.75;}.my_modal-body{position:relative;-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;padding:15px;overflow:auto;}
+  </style>
+  <script src="js/script2.js"></script>
+</head>
+
+<body>
+<a href="index.html">Переход к заданию 1</a>
+<br><br>
+<a href="#modal_open">Открыть модальное окно с картинками</a>
+
+<div id="modal_open" class="my_modal">
+    <div class="my_modal-content">
+      <div class="my_modal-header">
+        <p class="my_modal-title">Картинки</p>
+        <a href="#" title="Закрыть модальное окно" class="close">×</a>
+      </div>
+      <div class = "galery">
+        <img src="img/IMG1.jpg" width="600"> 
+      </div>
+      <div class="thumbnails">    
+          <img id = "IMG1" src="img/IMG1_thumb.jpg">
+          <img id = "IMG2" src="img/IMG2_thumb.jpg">
+          <img id = "IMG3" src="img/IMG3_thumb.jpg"> 
+      </div>
+    </div>
+</div>
+</body>
+</html>
